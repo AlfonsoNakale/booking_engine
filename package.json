@@ -1,10 +1,10 @@
 {
   "name": "booking_app_v2",
   "version": "1.0.0",
-  "main": "dist/app.js",
   "scripts": {
-    "dev": "parcel js/app.js",
-    "build": "parcel build js/app.js --dist-dir dist --public-url ./"
+    "dev": "parcel serve index.html",
+    "build": "parcel build index.html --dist-dir dist --public-url ./",
+    "clean": "rm -rf dist .parcel-cache"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +15,6 @@
     "flatpickr": "^4.6.13"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
-  "type": "module"
+  "type": "module",
+  "source": "index.html"
 }
