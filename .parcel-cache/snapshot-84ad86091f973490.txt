@@ -28,7 +28,7 @@
 139C:\Users\alfon\Desktop\Work\Brandx\booking_engine\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\scope\default.js133740229578174661 0
 97C:\Users\alfon\Desktop\Work\Brandx\booking_engine\node_modules\@swc\helpers\cjs\_ts_generator.cjs133740229598120255 0
 87C:\Users\alfon\Desktop\Work\Brandx\booking_engine\node_modules\abortcontroller-polyfill133748813581965831 1
-54C:\Users\alfon\Desktop\Work\Brandx\booking_engine\dist133748836843234421 1
+54C:\Users\alfon\Desktop\Work\Brandx\booking_engine\dist133748838042653163 1
 84C:\Users\alfon\Desktop\Work\Brandx\booking_engine\node_modules\csso\dist\csso.esm.js133740229591105864 0
 120C:\Users\alfon\Desktop\Work\Brandx\booking_engine\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\lib\style.js133740229580439653 0
 94C:\Users\alfon\Desktop\Work\Brandx\booking_engine\node_modules\flatpickr\dist\l10n\sr-cyr.d.ts133740254291802396 0
@@ -2767,7 +2767,7 @@
 88C:\Users\alfon\Desktop\Work\Brandx\booking_engine\node_modules\flatpickr\dist\l10n\ko.js133740254289264657 0
 97C:\Users\alfon\Desktop\Work\Brandx\booking_engine\node_modules\flatpickr\dist\esm\l10n\uz_latn.js133740254290308908 0
 94C:\Users\alfon\Desktop\Work\Brandx\booking_engine\node_modules\caniuse-lite\data\regions\ET.js133740229597625715 0
-65C:\Users\alfon\Desktop\Work\Brandx\booking_engine\dist\app.js.map133748836843214442 0
+65C:\Users\alfon\Desktop\Work\Brandx\booking_engine\dist\app.js.map133748838042631691 0
 88C:\Users\alfon\Desktop\Work\Brandx\booking_engine\node_modules\flatpickr\dist\l10n\lv.js133740254289466953 0
 137C:\Users\alfon\Desktop\Work\Brandx\booking_engine\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\node\Atrule.js133740229574857502 0
 90C:\Users\alfon\Desktop\Work\Brandx\booking_engine\node_modules\flatpickr\dist\l10n\mk.d.ts133740254291519372 0
@@ -6204,4 +6204,4 @@
 70C:\Users\alfon\Desktop\Work\Brandx\booking_engine\js\bookingDetails.js133747689832093715 0
 70C:\Users\alfon\Desktop\Work\Brandx\booking_engine\js\formValidation.js133747704069316501 0
 74C:\Users\alfon\Desktop\Work\Brandx\booking_engine\js\pricingCalculation.js133747714857527144 0
-61C:\Users\alfon\Desktop\Work\Brandx\booking_engine\dist\app.js133748836843121376 0
+61C:\Users\alfon\Desktop\Work\Brandx\booking_engine\dist\app.js133748838042545318 0
