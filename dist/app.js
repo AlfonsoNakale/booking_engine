@@ -767,8 +767,10 @@ const $157e9ba0b1ce1572$var$EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a
 
 
 "use strict";
+// Initialize Webflow
 window.Webflow ||= [];
 window.Webflow.push(()=>{
+    // Initialize all modules
     (0, $2dd5f9dccafe7e70$export$de01a5d2298a9bfb)();
     (0, $682918f8353579e8$export$98d932a433ebf613)();
     (0, $157e9ba0b1ce1572$export$b67d05e9c9fe4b31)();
