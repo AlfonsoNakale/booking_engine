@@ -1,3 +1,4 @@
+// changed the name
 import flatpickr from "flatpickr";
 
 // API configuration for exchange rate service
