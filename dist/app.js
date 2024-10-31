@@ -1,4 +1,4 @@
-import $3UcuW$flatpickr from "flatpickr";
+import flatpickr from "flatpickr";
 
 // API configuration for exchange rate service
 const $1545ac41c1e5403f$var$API_CONFIG = {
