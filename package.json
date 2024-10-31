@@ -1,10 +1,11 @@
 {
   "name": "booking_app_v2",
   "version": "1.0.0",
-  "main": "js/app.js",
+  "main": "dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel js/app.js"
+    "start": "parcel build js/app.js",
+    "build": "parcel build js/app.js --dist-dir docs"
   },
   "author": "",
   "license": "ISC",
