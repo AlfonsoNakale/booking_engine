@@ -1,6 +1,6 @@
 {
   "name": "booking_app_v2",
-  "version": "1.0.0",
+  "version": "",
   "main": "dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
