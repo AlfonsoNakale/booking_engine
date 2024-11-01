@@ -1,4 +1,4 @@
-import flatpickr from "flatpickr";
+import flatpickr from "../node_modules/flatpickr/dist/flatpickr.js";
 import {
   updatePricing,
   calculateTotal,
