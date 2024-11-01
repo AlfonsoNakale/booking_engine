@@ -85,31 +85,40 @@ function addEventListeners() {
  * Only fetches if currency is not NAD
  */
 async function fetchExchangeRate() {
-  if (state.currentCurrency === "NAD") {
-    state.exchangeRate = PRICING_CONSTANTS.DEFAULT_EXCHANGE_RATE;
-    return;
-  }
+  const MAX_RETRIES = 3;
+  let retries = 0;
 
-  try {
-    // Fetch exchange rate from API
-    const response = await fetch(
-      `${API_CONFIG.BASE_URL}/${API_CONFIG.KEY}/pair/NAD/${state.currentCurrency}`
-    );
+  while (retries < MAX_RETRIES) {
+    try {
+      if (state.currentCurrency === "NAD") {
+        state.exchangeRate = PRICING_CONSTANTS.DEFAULT_EXCHANGE_RATE;
+        return;
+      }
 
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
+      const response = await fetch(
+        `${API_CONFIG.BASE_URL}/${API_CONFIG.KEY}/pair/NAD/${state.currentCurrency}`
+      );
 
-    const data = await response.json();
-    if (data.result === "success") {
-      state.exchangeRate = data.conversion_rate;
-    } else {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      if (data.result === "success") {
+        state.exchangeRate = data.conversion_rate;
+        return;
+      }
+      
       throw new Error(data.error || "API returned unsuccessful result");
+    } catch (error) {
+      retries++;
+      if (retries === MAX_RETRIES) {
+        console.error("Exchange rate fetch failed after retries:", error);
+        state.exchangeRate = PRICING_CONSTANTS.DEFAULT_EXCHANGE_RATE;
+      }
+      // Wait before retrying
+      await new Promise(resolve => setTimeout(resolve, 1000 * retries));
     }
-  } catch (error) {
-    console.error("Exchange rate fetch failed:", error);
-    // Use default exchange rate if fetch fails
-    state.exchangeRate = PRICING_CONSTANTS.DEFAULT_EXCHANGE_RATE;
   }
 }
 

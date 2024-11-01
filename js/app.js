@@ -6,22 +6,21 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 // Import all required modules
-import { initializeDatePickers } from "./datePicker.js";
-import { initializeFormValidation } from "./formValidation.js";
-import { initializePricingCalculation } from "./pricingCalculation.js";
-import { initializeBookingDetails } from "./bookingDetails.js";
+import { initializeDatePickers } from './datePicker.js';
+import { initializeFormValidation } from './formValidation.js';
+import { initializeBookingDetails } from './bookingDetails.js';
+import { initializePricingCalculation } from './pricingCalculation.js';
 
 // Initialize all modules when DOM is ready
 function initializeApp() {
   try {
-    console.log('Initializing application...');
     initializeDatePickers();
     initializeBookingDetails();
     initializeFormValidation();
     initializePricingCalculation();
-    console.log('Application initialized successfully');
   } catch (error) {
-    console.error("Failed to initialize application:", error);
+    console.error('Failed to initialize application:', error);
+    // Show user-friendly error message
     const errorDiv = document.createElement('div');
     errorDiv.className = 'error-message';
     errorDiv.textContent = 'Something went wrong. Please refresh the page.';
@@ -35,6 +34,3 @@ if (document.readyState === 'loading') {
 } else {
   initializeApp();
 }
-
-// Export for use in other modules if needed
-export { initializeApp };

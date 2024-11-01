@@ -2,8 +2,8 @@
   "name": "booking_app_v2",
   "version": "1.0.0",
   "scripts": {
-    "dev": "parcel serve index.html",
-    "build": "parcel build index.html --dist-dir dist --public-url ./",
+    "dev": "parcel js/app.js",
+    "build": "parcel build js/app.js --no-source-maps --no-cache",
     "clean": "rm -rf dist .parcel-cache"
   },
   "author": "",
