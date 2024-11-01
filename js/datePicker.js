@@ -1,4 +1,4 @@
-import flatpickr from "flatpickr";
+import flatpickr from "../node_modules/flatpickr/dist/flatpickr.js";
 import { updateBookingDetails } from "./bookingDetails.js";
 
 let pickupPicker, returnPicker;

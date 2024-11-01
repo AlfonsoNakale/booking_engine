@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "parcel js/app.js",
-    "build": "parcel build js/app.js --no-source-maps --no-cache",
+    "build": "parcel build js/app.js --no-source-maps --no-cache --public-url ./",
     "clean": "rm -rf dist .parcel-cache"
   },
   "author": "",
@@ -16,5 +16,8 @@
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "type": "module",
-  "source": "index.html"
+  "source": "index.html",
+  "alias": {
+    "flatpickr": "./node_modules/flatpickr/dist/flatpickr.js"
+  }
 }
